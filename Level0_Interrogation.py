@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 # Limit threads to prevent CPU thread lockup
 torch.set_num_threads(4)
 
-MODEL_PATH = "./my_model_folder"  # local folder path
+MODEL_PATH = "./"  # local folder path
 
 print("Loading model and tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, use_fast=False)
